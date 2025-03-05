@@ -38,19 +38,16 @@ export default function SalgadosPage() {
   }
 
   return (
-    <div>
-      <h1>Lista de Salgados</h1>
-      <ul>
-        {salgados.length > 0 ? (
-          salgados.map((salgado) => (
-            <li key={salgado._id}>
-              {salgado.nome} - R${salgado.valor}
-            </li>
-          ))
-        ) : (
-          <p>Nenhum salgado encontrado.</p>
-        )}
-      </ul>
-    </div>
+    <ul className="flex flex-wrap gap-x-10 bg-blue-700">
+      {salgados.length > 0 ? (
+        salgados.map((salgado) => (
+          <li key={salgado._id}>
+            {salgado.nome} - R${salgado.valor}
+          </li>
+        ))
+      ) : (
+        <p>Nenhum salgado encontrado.</p>
+      )}
+    </ul>
   );
 }

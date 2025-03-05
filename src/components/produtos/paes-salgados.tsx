@@ -38,19 +38,16 @@ export default function PaesSalgadosPage() {
   }
 
   return (
-    <div>
-      <h1>Lista de Pães Salgados</h1>
-      <ul>
-        {paesSalgados.length > 0 ? (
-          paesSalgados.map((paoSalgado) => (
-            <li key={paoSalgado._id}>
-              {paoSalgado.nome} - R${paoSalgado.valor}
-            </li>
-          ))
-        ) : (
-          <p>Nenhum pão salgado encontrado.</p>
-        )}
-      </ul>
-    </div>
+    <ul className="flex flex-wrap gap-x-10 bg-blue-700">
+      {paesSalgados.length > 0 ? (
+        paesSalgados.map((paoSalgado) => (
+          <li key={paoSalgado._id}>
+            {paoSalgado.nome} - R${paoSalgado.valor}
+          </li>
+        ))
+      ) : (
+        <p>Nenhum pão salgado encontrado.</p>
+      )}
+    </ul>
   );
 }

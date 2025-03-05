@@ -38,19 +38,16 @@ export default function DocesPage() {
   }
 
   return (
-    <div>
-      <h1>Lista de Doces</h1>
-      <ul>
-        {doces.length > 0 ? (
-          doces.map((doce) => (
-            <li key={doce._id}>
-              {doce.nome} - R${doce.valor}
-            </li>
-          ))
-        ) : (
-          <p>Nenhum doce encontrado.</p>
-        )}
-      </ul>
-    </div>
+    <ul className="flex flex-wrap gap-x-10 bg-blue-700">
+      {doces.length > 0 ? (
+        doces.map((doce) => (
+          <li key={doce._id}>
+            {doce.nome} - R${doce.valor}
+          </li>
+        ))
+      ) : (
+        <p>Nenhum doce encontrado.</p>
+      )}
+    </ul>
   );
 }

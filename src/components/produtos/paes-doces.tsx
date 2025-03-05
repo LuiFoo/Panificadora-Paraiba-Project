@@ -38,19 +38,16 @@ export default function PaesDocesPage() {
   }
 
   return (
-    <div>
-      <h1>Lista de Pães Doces</h1>
-      <ul>
-        {paesDoces.length > 0 ? (
-          paesDoces.map((paesDoce) => (
-            <li key={paesDoce._id}>
-              {paesDoce.nome} - R${paesDoce.valor}
-            </li>
-          ))
-        ) : (
-          <p>Nenhum pão doce encontrado.</p>
-        )}
-      </ul>
-    </div>
+    <ul className="flex flex-wrap gap-x-10 bg-blue-700">
+      {paesDoces.length > 0 ? (
+        paesDoces.map((paesDoce) => (
+          <li key={paesDoce._id}>
+            {paesDoce.nome} - R${paesDoce.valor}
+          </li>
+        ))
+      ) : (
+        <p>Nenhum pão doce encontrado.</p>
+      )}
+    </ul>
   );
 }

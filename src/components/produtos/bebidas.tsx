@@ -1,12 +1,14 @@
 'use client';
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 // Definindo uma interface para as bebidas
 interface Bebida {
   _id: string;
   nome: string;
-  valor: number;
+  valor: string;
+  img: string;
 }
 
 export default function BebidasPage() {
@@ -37,19 +39,19 @@ export default function BebidasPage() {
   }
 
   return (
-    <div>
-      <h1>Lista de Bebidas</h1>
-      <ul>
-        {bebidas.length > 0 ? (
-          bebidas.map((bebida) => (
-            <li key={bebida._id}>
+    <ul className="flex flex-wrap gap-x-10 bg-blue-700">
+      {bebidas.length > 0 ? (
+        bebidas.map((bebida) => (
+          <li key={bebida._id}>
+            <Link href='/' >
+              <img src={bebida.img} alt="" />
               {bebida.nome} - R${bebida.valor} {/* Exibe nome do produto e preço */}
-            </li>
-          ))
-        ) : (
-          <p>Nenhuma bebida encontrada.</p>
-        )}
-      </ul>
-    </div>
+            </Link>
+          </li>
+        ))
+      ) : (
+        <p>Nenhuma bebida encontrada.</p>
+      )}
+    </ul>
   );
 }

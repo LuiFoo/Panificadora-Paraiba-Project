@@ -1,3 +1,4 @@
+import Cardapio from "@/components/cardapio";
 import BebidasPage from "@/components/produtos/bebidas";
 import DocesPage from "@/components/produtos/doces";
 import PaesDocesPage from "@/components/produtos/paes-doces";
@@ -7,16 +8,7 @@ import SalgadosPage from "@/components/produtos/salgados";
 export default function Home() {
   return (
     <>
-      <BebidasPage />
-      <p>-----------------</p>
-      <DocesPage />
-      <p>-----------------</p>
-      <PaesDocesPage />
-      <p>-----------------</p>
-      <PaesSalgadosPage />
-      <p>-----------------</p>
-      <SalgadosPage />
-      <p>-----------------</p>
+      <Cardapio />
     </>
   );
 }
