@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import Image from 'next/image';
 import { useEffect, useState } from "react";
 
 // Definindo uma interface para as bebidas
@@ -44,7 +45,7 @@ export default function BebidasPage() {
         bebidas.map((bebida) => (
           <li key={bebida._id}>
             <Link href='/' >
-              <img src={bebida.img} alt="" />
+              <Image src={bebida.img} alt="" />
               {bebida.nome} - R${bebida.valor} {/* Exibe nome do produto e preço */}
             </Link>
           </li>
