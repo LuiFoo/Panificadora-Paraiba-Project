@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['media.discordapp.net'], // Adicionando o domínio Discord para imagens externas
+  },
 };
 
 export default nextConfig;

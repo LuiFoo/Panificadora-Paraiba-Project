@@ -45,7 +45,12 @@ export default function BebidasPage() {
         bebidas.map((bebida) => (
           <li key={bebida._id}>
             <Link href='/' >
-              <Image src={bebida.img} alt="" />
+              <Image 
+              src={bebida.img} 
+              alt="Imagem"
+              width={200} 
+              height={200} 
+              />
               {bebida.nome} - R${bebida.valor} {/* Exibe nome do produto e preço */}
             </Link>
           </li>
