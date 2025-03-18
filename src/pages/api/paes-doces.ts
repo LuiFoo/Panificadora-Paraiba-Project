@@ -7,19 +7,18 @@ export default async function handler(
 ) {
   try {
     await client.connect();
-    const dbSampleMflix = client.db("padaria");
+    const dbPadaria = client.db("paraiba");
 
-    const paesDoces = await dbSampleMflix
+    const paesDoces = await dbPadaria
       .collection("paes-doces")
       .find({})
       .sort({
         metacritic: -1,
       })
-      .limit(10)
       .toArray();
 
     return res.status(200).json({
-        paesDoces: paesDoces,
+      paesDoces: paesDoces,
     });
   } catch (error) {
     console.log(error);
