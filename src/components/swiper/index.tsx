@@ -30,7 +30,7 @@ export default function CategoriasSwiper() {
       >
         {cakeItems.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-2xl overflow-hidden shadow bg-white">
+            <div className="rounded-2xl overflow-hidden shadow bg-white mb-5">
               <img
                 src={item.image}
                 alt={item.name}
