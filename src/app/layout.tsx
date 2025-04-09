@@ -12,13 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Panificadora Paraíba',
-  description: 'Panificadora em Ribeirão Preto',
+  description: 'Panificadora em R',
   icons: {
     icon: '/images/favicon.svg',
   },
 };
+
 
 export default function RootLayout({
   children,
