@@ -41,4 +41,5 @@ body {
 
 .fonte-secundaria {
   font-family: var(--fonte-secundaria);
+  font-weight: 400;
 }
