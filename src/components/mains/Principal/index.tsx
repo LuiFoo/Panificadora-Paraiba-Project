@@ -1,3 +1,4 @@
+import ImagensSection from "@/components/Footer/ImagensSection";
 import CategoriasSwiper from "@/components/swiper";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,9 +50,14 @@ function MainPrincipal() {
             <article className="flex flex-col md:flex-row items-center justify-between gap-8">
               {/* Texto à esquerda */}
               <div className="w-full">
-                <p className="text-lg uppercase text-gray-600 pb-5">Conheça a Padaria Paraíba</p>
-                <h3 className="text-4xl font-semibold mb-4 text-[var(--color-fonte-100)]">Sabor e tradição em cada um de nossos produtos</h3>
-                <p className="text-gray-700 font-semibold text-base pt-3">
+                <p className="text-[var(--color-alavaco-100)] text-base uppercase font-bold pb-4">Conheça a Padaria Paraíba</p>
+                <h3 
+                  className="text-4xl font-normal mb-4 text-[var(--color-fonte-100)]"         
+                  style={{ fontFamily: "var(--fonte-secundaria)" }}
+                  >
+                    Sabor e tradição em cada um de nossos produtos
+                  </h3>
+                <p className="text-[var(--color-alavaco-100)] font-semibold text-base pt-3">
                   Na Panificadora Paraíba, desde 2016, unimos tradição e qualidade para oferecer pães e doces feitos com carinho.
                   O que começou como um sonho de pai e filha se tornou um ponto de encontro querido pelos clientes. Crescemos,
                   inovamos, mas sem perder nossa essência: ingredientes selecionados e o sabor de sempre. Seja bem-vindo ao nosso
@@ -75,7 +81,7 @@ function MainPrincipal() {
             </article>
           </div>
 
-
+          <ImagensSection />
         </section>
       </main>
     )
