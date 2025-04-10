@@ -10,7 +10,7 @@
   --color-avocado-500: #bdaa73;
   --color-alavaco-100: #322922;
   --color-fonte-100: #B79C4D;
-  --fonte-secundaria: "Aboreto", system-ui;
+  --fonte-secundaria: "Aboreto", "system-ui";
 }
 
 @theme inline {
@@ -37,4 +37,8 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: var(--color-alavaco-100) !important; /* bolinha ativa - ex: avocado */
+}
+
+.fonte-secundaria {
+  font-family: var(--fonte-secundaria);
 }
