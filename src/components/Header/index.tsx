@@ -7,7 +7,9 @@ function Header() {
         <header className="flex justify-center items-center gap-5 font-bold text-sm p-5">
             <Link href="/">PÁGINA INICIAL</Link>
             <Link href="/sobre">QUEM SOMOS</Link>
-            <Image src={logo} alt="Logo" width={121} height={79} />
+            <Link href="/">
+                <Image src={logo} alt="Logo" width={121} height={79} />
+            </Link>
             <Link href="/sobre">PRODUTOS</Link>
             <Link href="/sobre">FALE CONOSCO</Link>
         </header>
