@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer>
-      <section className="flex flex-wrap justify-between pt-24 px-23 bg-gray-100">
+      <section className="flex flex-wrap justify-between pt-24 px-23">
           <div className="brand-section mb-6 md:mb-0">
             <img
               src="/images/logo.svg"
