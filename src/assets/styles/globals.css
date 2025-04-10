@@ -10,6 +10,7 @@
   --color-avocado-500: #bdaa73;
   --color-alavaco-100: #322922;
   --color-fonte-100: #B79C4D;
+  --fonte-secundaria: "Aboreto", system-ui;
 }
 
 @theme inline {

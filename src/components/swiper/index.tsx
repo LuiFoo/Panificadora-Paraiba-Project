@@ -18,7 +18,11 @@ const cakeItems = [
 export default function CategoriasSwiper() {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-10">
-      <h2 className="text-center text-[var(--color-fonte-100)] pb-8 text-2xl ">ALGUNS DOS NOSSOS PRODUTOS</h2>
+      <h2
+        className="text-center text-[var(--color-fonte-100)] pb-8 text-2xl"
+        style={{ fontFamily: "var(--fonte-secundaria)" }}
+      >
+        ALGUNS DOS NOSSOS PRODUTOS</h2>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
