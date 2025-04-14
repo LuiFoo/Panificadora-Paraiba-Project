@@ -10,7 +10,7 @@ function Header() {
             <Link href="/">
                 <Image src={logo} alt="Logo" width={121} height={79} />
             </Link>
-            <Link href="/sobre">PRODUTOS</Link>
+            <Link href="/cardapio">PRODUTOS</Link>
             <Link href="/sobre">FALE CONOSCO</Link>
         </header>
     )
