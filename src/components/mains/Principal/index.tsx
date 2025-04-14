@@ -2,7 +2,6 @@ import ImagensSection from "@/components/Footer/ImagensSection";
 import SectionTexImg from "@/components/SectionTexImg";
 import CategoriasSwiper from "@/components/swiper";
 import Image from "next/image";
-import Link from "next/link";
 
 function MainPrincipal() {
     return(
