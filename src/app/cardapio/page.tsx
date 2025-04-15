@@ -128,7 +128,7 @@ export default function CardapioPage() {
             </div>
           ) : categoriaAtual ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {itens.length > 0 ? (
+              {itens.length ? (
                 itens.map((item) => (
                   <div
                     key={item._id}
