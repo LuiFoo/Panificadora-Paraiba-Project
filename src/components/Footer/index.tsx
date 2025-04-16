@@ -22,7 +22,7 @@ function Footer() {
         <figcaption className="sr-only">Linha de produtos da padaria</figcaption>
       </figure>
 
-      <div className="flex flex-wrap justify-between pt-24 px-23">
+      <div className="flex flex-wrap max-[830px]:gap-2 max-[830px]:flex-col justify-between pt-24 px-23 max-[600px]:pt-10 max-[600px]:px-12">
         <section className="brand-section mb-6 md:mb-0" aria-labelledby="brand-title">
           <h2 id="brand-title" className="sr-only">Marca</h2>
           <img
