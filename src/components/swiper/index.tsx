@@ -27,10 +27,21 @@ export default function CategoriasSwiper() {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={3} // valor padrão
         loop
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
+        breakpoints={{
+          100: {
+            slidesPerView: 1, // 1 slide por vez no mobile
+          },
+          768: {
+            slidesPerView: 2, // 2 slides por vez em tablets
+          },
+          1024: {
+            slidesPerView: 3, // 3 slides por vez em telas maiores (desktop)
+          },
+        }}
         className="rounded-2xl !pb-7"
       >
         {cakeItems.map((item, index) => (
