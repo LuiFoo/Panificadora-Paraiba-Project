@@ -115,7 +115,7 @@ function Footer() {
         </address>
       </div>
 
-      <h4 className="text-center text-base font-bold pt-6 pb-2">
+      <h4 className="text-center text-base font-bold pt-6 pb-2 max-[600px]:text-[0.7rem]">
         ©2025. Todos os direitos reservados. Blue Bird.
       </h4>
     </footer>

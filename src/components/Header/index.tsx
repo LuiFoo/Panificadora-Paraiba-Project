@@ -31,21 +31,21 @@ function Header() {
             {/* Menu Desktop */}
             <nav className="flex max-[750px]:hidden justify-center items-center gap-5 w-full">
                 <Link href="/">PÁGINA INICIAL</Link>
-                <Link href="/sobre">QUEM SOMOS</Link>
+                <Link href="/quem-somos">QUEM SOMOS</Link>
                 <Link href="/">
                     <Image src={logo} alt="Logo" width={121} height={79} />
                 </Link>
-                <Link href="/cardapio">PRODUTOS</Link>
-                <Link href="/sobre">FALE CONOSCO</Link>
+                <Link href="/produtos">PRODUTOS</Link>
+                <Link href="/fale-conosco">FALE CONOSCO</Link>
             </nav>
 
             {/* Menu Mobile */}
             {menuOpen && (
                 <nav className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-6 font-bold text-sm z-10 md:hidden">
                     <Link href="/" onClick={() => setMenuOpen(false)}>PÁGINA INICIAL</Link>
-                    <Link href="/sobre" onClick={() => setMenuOpen(false)}>QUEM SOMOS</Link>
-                    <Link href="/cardapio" onClick={() => setMenuOpen(false)}>PRODUTOS</Link>
-                    <Link href="/sobre" onClick={() => setMenuOpen(false)}>FALE CONOSCO</Link>
+                    <Link href="/quem-somos" onClick={() => setMenuOpen(false)}>QUEM SOMOS</Link>
+                    <Link href="/produtos" onClick={() => setMenuOpen(false)}>PRODUTOS</Link>
+                    <Link href="/fale-conosco" onClick={() => setMenuOpen(false)}>FALE CONOSCO</Link>
                 </nav>
             )}
         </header>

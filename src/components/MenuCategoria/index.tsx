@@ -56,7 +56,7 @@ function MenuCategoria({
               </button>
             ) : (
               <Link
-                href={`/cardapio?categoria=${encodeURIComponent(category)}`}
+                href={`/produtos?categoria=${encodeURIComponent(category)}`}
                 className="block px-4 py-3 bg-[var(--color-avocado-600)] text-white text-sm font-semibold rounded-lg shadow hover:bg-[var(--color-avocado-500)] focus:outline-none focus:ring-2 focus:ring-[var(--color-avocado-500)] transition"
               >
                 {category}
