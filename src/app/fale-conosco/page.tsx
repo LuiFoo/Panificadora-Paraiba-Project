@@ -83,8 +83,8 @@ function FaleConosco() {
                     </address>
                 </section>
 
-                <section className="grid grid-cols-2 gap-[50px]">
-                    <figure className="relative size-auto">
+                <section className="grid grid-cols-2 gap-[50px] max-[650px]:grid-cols-1 ">
+                    <figure className="w-full h-full justify-self-center relative max-[600px]:w-full max-[600px]:h-50">
                         <Image
                             src="/images/fundo.png"
                             alt="Produtos da Padaria Paraíba"
@@ -92,14 +92,14 @@ function FaleConosco() {
                         />
                     </figure>
 
-                    <article className="mr-[80px]">
+                    <article className="justify-self-center mr-[80px] max-[600px]:mr-0 max-[600px]:w-[80%]">
                         <h3 
                             className="max-[600px]:text-[1.6rem] pt-[20px] pb-[50px] max-[600px]:pb-[1rem] text-4xl font-normal text-[var(--color-fonte-100)]"
                             style={{ fontFamily: "var(--fonte-secundaria)" }}>
                                 informações sobre encomendas
                         </h3>
                         <ul>
-                            <li className="flex ">
+                            <li className="flex gap-2">
                                 <Image
                                     src="/images/certinho.svg"
                                     alt="Ícone do WhatsApp"
@@ -108,7 +108,7 @@ function FaleConosco() {
                                 />
                                 <p>Aceitamos encomendas de todos os itens da padaria, mas nossos campeões de pedidos são bolos personalizados, baguetes crocantes e massas doces irresistíveis.</p>
                             </li>
-                            <li>
+                            <li className="flex gap-2">
                                 <Image
                                     src="/images/certinho.svg"
                                     alt="Ícone do WhatsApp"
@@ -117,7 +117,7 @@ function FaleConosco() {
                                 />
                                 <p>Para garantir a qualidade e o frescor, pedimos que as encomendas sejam feitas com pelo menos 24 horas de antecedência. Para bolos personalizados e pedidos maiores, consulte nossos prazos!</p>
                             </li>
-                            <li>
+                            <li className="flex gap-2 mb-7">
                                 <Image
                                     src="/images/certinho.svg"
                                     alt="Ícone do WhatsApp"
