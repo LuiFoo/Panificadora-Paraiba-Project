@@ -83,7 +83,7 @@ export default function CardapioPage() {
   return (
     <>
       <Header />
-      <div className="mx-auto px-4 py-8">
+      <div className="mx-auto py-8">
         <h1 className="text-3xl font-bold text-center mb-6">Nosso Cardápio</h1>
 
         <MenuCategoria
@@ -125,7 +125,7 @@ export default function CardapioPage() {
               )}
             </div>
           ) : (
-            <p className="text-center text-gray-500 py-8">
+            <p className="text-center text-gray-500 py-8  px-4 ">
               Selecione uma categoria para ver os itens disponíveis.
             </p>
           )}
