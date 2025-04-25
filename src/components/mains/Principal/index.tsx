@@ -5,6 +5,7 @@ import MenuCategoria from "@/components/MenuCategoria";
 import Image from "next/image";
 
 function MainPrincipal() {
+    console.log("CHAPA");
     return(
         <main>
 
