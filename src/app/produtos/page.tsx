@@ -1,13 +1,17 @@
 "use client";
 
 import Header from "@/components/Header";
-import MenuCategoria from "@/components/MenuCategoria"; // ajuste o path conforme necessário
+import MenuCategoria from "@/components/MenuCategoria";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 interface ItemCardapio {
   _id: string;
   nome: string;
-  valor: string;
+  valor: number;
+  img: string;
+  subc: string;
 }
 
 const categoriasMenu: string[] = [
@@ -28,9 +32,8 @@ export default function CardapioPage() {
 
   useEffect(() => {
     setIsClient(true);
-
     const params = new URLSearchParams(window.location.search);
-    const categoriaParam = params.get('categoria');
+    const categoriaParam = params.get("categoria");
 
     if (categoriaParam && categoriasMenu.includes(categoriaParam)) {
       setCategoriaAtual(categoriaParam);
@@ -76,8 +79,8 @@ export default function CardapioPage() {
     buscarItensPorCategoria(categoria);
 
     const url = new URL(window.location.href);
-    url.searchParams.set('categoria', categoria);
-    window.history.pushState({}, '', url);
+    url.searchParams.set("categoria", categoria);
+    window.history.pushState({}, "", url);
   };
 
   return (
@@ -105,17 +108,26 @@ export default function CardapioPage() {
               <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-amber-500"></div>
             </div>
           ) : categoriaAtual ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex flex-wrap justify-center gap-[30px]">
               {itens.length ? (
                 itens.map((item) => (
                   <div
                     key={item._id}
-                    className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition"
+                    className="bg-[#e6e6e6] w-75 rounded-lg shadow-md p-5 hover:shadow-lg transition"
                   >
+                    <Image
+                      src={item.img}
+                      alt={item.nome}
+                      width={250}
+                      height={250}
+                      className="object-cover rounded mb-4 justify-self-center"
+                    />
+                    <p className="font-bold text-[#646464]">{item.subc}</p>
                     <h3 className="text-lg font-semibold mb-2">{item.nome}</h3>
-                    <p className="text-amber-600 font-bold">
-                      R$ {parseFloat(item.valor).toFixed(2).replace('.', ',')}
+                    <p className="text-amber-600 font-bold mb-8">
+                    A partir: R${item.valor.toFixed(2).replace(".", ",")}
                     </p>
+                    <Link href="/" className="font-semibold bg-[var(--color-avocado-600)] hover:bg-[var(--color-avocado-500)] px-[0.7rem] py-[0.4rem] rounded-lg">Ver opções</Link>
                   </div>
                 ))
               ) : (
@@ -125,7 +137,7 @@ export default function CardapioPage() {
               )}
             </div>
           ) : (
-            <p className="text-center text-gray-500 py-8  px-4 ">
+            <p className="text-center text-gray-500 py-8 px-4">
               Selecione uma categoria para ver os itens disponíveis.
             </p>
           )}
