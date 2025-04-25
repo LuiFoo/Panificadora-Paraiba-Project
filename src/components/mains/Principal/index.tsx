@@ -9,7 +9,7 @@ import Image from "next/image";
 
 function MainPrincipal() {
   useEffect(() => {
-    console.log("CHAPA - navegador");
+    console.log("CHAPA ~Rafael");
   }, []);
 
     return(
