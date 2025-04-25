@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ImagensSection from "@/components/Footer/ImagensSection";
 import SectionTexImg from "@/components/SectionTexImg";
 import CategoriasSwiper from "@/components/swiper";
@@ -5,7 +6,10 @@ import MenuCategoria from "@/components/MenuCategoria";
 import Image from "next/image";
 
 function MainPrincipal() {
-    console.log("CHAPA");
+  useEffect(() => {
+    console.log("CHAPA - navegador");
+  }, []);
+
     return(
         <main>
 
