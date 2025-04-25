@@ -1,3 +1,5 @@
+"use client"; // <-- Adicione isso como a primeira linha do arquivo
+
 import { useEffect } from "react";
 import ImagensSection from "@/components/Footer/ImagensSection";
 import SectionTexImg from "@/components/SectionTexImg";
