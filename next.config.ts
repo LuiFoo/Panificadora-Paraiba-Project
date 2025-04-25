@@ -2,7 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['img.freepik.com'],
+    domains: [
+      'img.freepik.com',
+      'media.discordapp.net', // <- adiciona este aqui
+    ],
   },
 };
 
