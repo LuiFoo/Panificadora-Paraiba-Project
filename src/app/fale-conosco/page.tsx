@@ -23,7 +23,7 @@ function FaleConosco() {
                         <nav >
                         <ul className="flex justify-center gap-4">
                                 <li className="uppercase ">
-                                    <Link href="/" className="flex flex-row items-center gap-[5px] bg-[#099700] px-[1rem] py-[0.75rem] text-[#ffffff]">
+                                    <Link href="tel:+551636151947" className="flex flex-row items-center gap-[5px] bg-[#099700] px-[1rem] py-[0.75rem] text-[#ffffff]">
                                         <Image
                                             src={whatsFale}
                                             alt="Ícone do WhatsApp"
