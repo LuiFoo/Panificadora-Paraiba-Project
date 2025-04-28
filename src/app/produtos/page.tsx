@@ -15,13 +15,13 @@ interface ItemCardapio {
 }
 
 const categoriasMenu: string[] = [
-  'bolos doces especiais',
-  'doces individuais',
-  'paes doces',
-  'paes salgados especiais',
-  'roscas paes especiais',
-  'salgados assados lanches',
-  'sobremesas tortas',
+  'BOLOS DOCES ESPECIAIS',
+  'DOCES INDIVIDUAIS',
+  'PAES DOCES',
+  'PAES SALGADOS ESPECIAIS',
+  'ROSCAS PAES ESPECIAIS',
+  'SALGADOS ASSADOS LANCHES',
+  'SOBREMESAS TORTAS',
 ];
 
 // Definindo categoria padrão aqui
@@ -67,13 +67,13 @@ export default function CardapioPage() {
       const data = await response.json();
 
       const chavesAPI: { [key: string]: string } = {
-        'bolos doces especiais': 'bolosDocesEspeciais',
-        'doces individuais': 'docesIndividuais',
-        'paes doces': 'paesDoces',
-        'paes salgados especiais': 'paesSalgadosEspeciais',
-        'roscas paes especiais': 'roscasPaesEspeciais',
-        'salgados assados lanches': 'salgadosAssadosLanches',
-        'sobremesas tortas': 'sobremesasTortas',
+        'BOLOS DOCES ESPECIAIS': 'bolosDocesEspeciais',
+        'DOCES INDIVIDUAIS': 'docesIndividuais',
+        'PAES DOCES': 'paesDoces',
+        'PAES SALGADOS ESPECIAIS': 'paesSalgadosEspeciais',
+        'ROSCAS PAES ESPECIAIS': 'roscasPaesEspeciais',
+        'SALGADOS ASSADOS LANCHES': 'salgadosAssadosLanches',
+        'SOBREMESAS TORTAS': 'sobremesasTortas',
       };
 
       const chave = chavesAPI[categoria] || Object.keys(data)[0];
