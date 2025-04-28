@@ -52,11 +52,11 @@ function Footer() {
           <ul className="space-y-2">
             <li className="flex items-center gap-2">
               <img src="/images/seta.svg" alt="Seta" />
-              <Link href="/" className="hover:underline">Quem Somos</Link>
+              <Link href="/quem-somos" className="hover:underline">Quem Somos</Link>
             </li>
             <li className="flex items-center gap-2">
               <img src="/images/seta.svg" alt="Seta" />
-              <Link href="/sobre" className="hover:underline">Fale Conosco</Link>
+              <Link href="/fale-conosco" className="hover:underline">Fale Conosco</Link>
             </li>
             <li className="flex items-center gap-2">
               <img src="/images/seta.svg" alt="Seta" />
@@ -64,7 +64,7 @@ function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <img src="/images/seta.svg" alt="Seta" />
-              <Link href="/localizacao" className="hover:underline">Google Maps</Link>
+              <Link href="https://maps.app.goo.gl/VUQhKXqCBWc1gQ8FA" className="hover:underline">Google Maps</Link>
             </li>
           </ul>
         </nav>
