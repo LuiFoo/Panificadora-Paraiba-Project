@@ -34,7 +34,7 @@ function FaleConosco() {
                                     </Link>
                                 </li>
                                 <li className="uppercase">
-                                    <Link href="/" className="flex flex-row items-center gap-[5px] bg-[#099700] px-[1rem] py-[0.75rem]">
+                                    <Link href="https://api.whatsapp.com/send?phone=551636151947&text=Olá%20Paraíba" className="flex flex-row items-center gap-[5px] bg-[#099700] px-[1rem] py-[0.75rem]">
                                         <Image
                                             src={telFale}
                                             alt="Ícone do WhatsApp"
